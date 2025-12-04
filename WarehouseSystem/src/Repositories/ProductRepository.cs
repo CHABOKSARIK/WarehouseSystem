@@ -4,15 +4,24 @@ using WarehouseSystem.Models;
 
 namespace WarehouseSystem.Repositories
 {
+    /// <summary>
+    /// Предоставляет методы для работы с данными товаров в базе данных SQLite.
+    /// </summary>
     public class ProductRepository
     {
         private readonly string _connectionString = "Data Source=warehouse.db;Version=3;";
 
+        /// <summary>
+        /// Инициализирует новый экземпляр класса ProductRepository и базу данных.
+        /// </summary>
         public ProductRepository()
         {
             InitializeDatabase();
         }
 
+        /// <summary>
+        /// Инициализирует базу данных, создавая таблицу Products, если она не существует.
+        /// </summary>
         private void InitializeDatabase()
         {
             var connection = new SQLiteConnection(_connectionString);
@@ -23,6 +32,10 @@ namespace WarehouseSystem.Repositories
             command.ExecuteNonQuery();
         }
 
+        /// <summary>
+        /// Добавляет новый товар в базу данных.
+        /// </summary>
+        /// <param name="product">Товар для добавления.</param>
         public void AddProduct(Product product)
         {
             var connection = new SQLiteConnection(_connectionString);
@@ -36,6 +49,10 @@ namespace WarehouseSystem.Repositories
             command.ExecuteNonQuery();
         }
 
+        /// <summary>
+        /// Получает все товары из базы данных.
+        /// </summary>
+        /// <returns>Список всех товаров.</returns>
         public List<Product> GetAllProducts()
         {
             var products = new List<Product>();

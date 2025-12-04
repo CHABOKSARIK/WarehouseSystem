@@ -4,8 +4,14 @@ using WarehouseSystem.Services;
 
 namespace WarehouseSystem
 {
+    /// <summary>
+    /// Главный класс приложения WarehouseSystem.
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// Точка входа в приложение.
+        /// </summary>
         static void Main()
         {
             var repository = new ProductRepository();
