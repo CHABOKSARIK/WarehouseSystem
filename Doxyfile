@@ -1,5 +1,5 @@
 PROJECT_NAME = "WarehouseSystem"
-OUTPUT_DIRECTORY = docs/doxygen
+OUTPUT_DIRECTORY = WarehouseSystem/docs/doxygen
 INPUT = WarehouseSystem/src/
 RECURSIVE = YES
 HAVE_DOT = YES
