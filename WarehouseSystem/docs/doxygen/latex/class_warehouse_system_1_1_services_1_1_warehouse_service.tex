@@ -1,0 +1,81 @@
+\doxysection{Warehouse\+System.\+Services.\+Warehouse\+Service Class Reference}
+\hypertarget{class_warehouse_system_1_1_services_1_1_warehouse_service}{}\label{class_warehouse_system_1_1_services_1_1_warehouse_service}\index{WarehouseSystem.Services.WarehouseService@{WarehouseSystem.Services.WarehouseService}}
+
+
+Предоставляет бизнес-\/логику для работы со складом.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_warehouse_system_1_1_services_1_1_warehouse_service_a2a4437aa5e78a69616fd6cdbdcc424db}{Warehouse\+Service}} (\mbox{\hyperlink{class_warehouse_system_1_1_repositories_1_1_product_repository}{Product\+Repository}} repository)
+\begin{DoxyCompactList}\small\item\em Инициализирует новый экземпляр класса \doxylink{class_warehouse_system_1_1_services_1_1_warehouse_service}{Warehouse\+Service}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_warehouse_system_1_1_services_1_1_warehouse_service_aaf5dbd3687bc5e57cab27bf40880da65}{Add\+Product}} (string name, string category, double price)
+\begin{DoxyCompactList}\small\item\em Добавляет новый товар на склад. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_warehouse_system_1_1_models_1_1_product}{Product}} $>$ \mbox{\hyperlink{class_warehouse_system_1_1_services_1_1_warehouse_service_a7b697a5e747cd82174a68949e03b24e4}{Get\+All\+Products}} ()
+\begin{DoxyCompactList}\small\item\em Получает все товары со склада. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Предоставляет бизнес-\/логику для работы со складом. 
+
+\label{doc-constructors}
+\Hypertarget{class_warehouse_system_1_1_services_1_1_warehouse_service_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_warehouse_system_1_1_services_1_1_warehouse_service_a2a4437aa5e78a69616fd6cdbdcc424db}\index{WarehouseSystem.Services.WarehouseService@{WarehouseSystem.Services.WarehouseService}!WarehouseService@{WarehouseService}}
+\index{WarehouseService@{WarehouseService}!WarehouseSystem.Services.WarehouseService@{WarehouseSystem.Services.WarehouseService}}
+\doxysubsubsection{\texorpdfstring{WarehouseService()}{WarehouseService()}}
+{\footnotesize\ttfamily \label{class_warehouse_system_1_1_services_1_1_warehouse_service_a2a4437aa5e78a69616fd6cdbdcc424db} 
+Warehouse\+System.\+Services.\+Warehouse\+Service.\+Warehouse\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_warehouse_system_1_1_repositories_1_1_product_repository}{Product\+Repository}}}]{repository}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Инициализирует новый экземпляр класса \doxylink{class_warehouse_system_1_1_services_1_1_warehouse_service}{Warehouse\+Service}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em repository} & Репозиторий для работы с товарами.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_warehouse_system_1_1_services_1_1_warehouse_service_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_warehouse_system_1_1_services_1_1_warehouse_service_aaf5dbd3687bc5e57cab27bf40880da65}\index{WarehouseSystem.Services.WarehouseService@{WarehouseSystem.Services.WarehouseService}!AddProduct@{AddProduct}}
+\index{AddProduct@{AddProduct}!WarehouseSystem.Services.WarehouseService@{WarehouseSystem.Services.WarehouseService}}
+\doxysubsubsection{\texorpdfstring{AddProduct()}{AddProduct()}}
+{\footnotesize\ttfamily \label{class_warehouse_system_1_1_services_1_1_warehouse_service_aaf5dbd3687bc5e57cab27bf40880da65} 
+void Warehouse\+System.\+Services.\+Warehouse\+Service.\+Add\+Product (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string}]{category}{, }\item[{double}]{price}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Добавляет новый товар на склад. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Название товара.\\
+\hline
+{\em category} & Категория товара.\\
+\hline
+{\em price} & Цена товара.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_warehouse_system_1_1_services_1_1_warehouse_service_a7b697a5e747cd82174a68949e03b24e4}\index{WarehouseSystem.Services.WarehouseService@{WarehouseSystem.Services.WarehouseService}!GetAllProducts@{GetAllProducts}}
+\index{GetAllProducts@{GetAllProducts}!WarehouseSystem.Services.WarehouseService@{WarehouseSystem.Services.WarehouseService}}
+\doxysubsubsection{\texorpdfstring{GetAllProducts()}{GetAllProducts()}}
+{\footnotesize\ttfamily \label{class_warehouse_system_1_1_services_1_1_warehouse_service_a7b697a5e747cd82174a68949e03b24e4} 
+List$<$ \mbox{\hyperlink{class_warehouse_system_1_1_models_1_1_product}{Product}} $>$ Warehouse\+System.\+Services.\+Warehouse\+Service.\+Get\+All\+Products (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получает все товары со склада. 
+
+\begin{DoxyReturn}{Returns}
+Список всех товаров.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Services/Warehouse\+Service.\+cs\end{DoxyCompactItemize}
